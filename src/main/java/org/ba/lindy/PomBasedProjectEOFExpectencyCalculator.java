@@ -31,7 +31,7 @@ public class PomBasedProjectEOFExpectencyCalculator {
 			writer.write("dependency,first_version_date,last_version_date\n");
 			for (val line : Files.readAllLines(inputPath, Charset.defaultCharset())) {
 				val dates = calculator.getExpectedEOFDependency(line);
-				if (dates != null) {
+				if (dates != null && dates[0] != 0 && dates[1] != 0) {
 					writer.write(getOutPut(line, dates));
 					minDates.addValue(currentDate - dates[0]);
 				}
