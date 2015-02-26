@@ -1,0 +1,31 @@
+dependency datadependency,first_version_date,last_version_date
+"com.google.guava:guava:jar:18.0:compile",Mon Apr 26 16:06:11 EEST 2010,Mon Aug 25 21:48:34 EEST 2014
+"net.sourceforge.htmlunit:htmlunit:jar:2.15:compile",Mon Jan 28 07:05:10 EET 2008,Mon Jun 02 21:46:20 EEST 2014
+"xalan:xalan:jar:2.7.1:compile",Wed Nov 09 00:07:36 EET 2005,Thu Jul 24 21:48:30 EEST 2014
+"xalan:serializer:jar:2.7.1:compile",Tue Sep 30 11:02:54 EEST 2008,Thu Jul 24 21:44:54 EEST 2014
+"commons-collections:commons-collections:jar:3.2.1:compile",Wed Nov 09 00:31:31 EET 2005,Tue Apr 15 04:09:24 EEST 2008
+"org.apache.commons:commons-lang3:jar:3.3.2:compile",Tue Jul 19 06:36:05 EEST 2011,Sun Apr 06 15:21:29 EEST 2014
+"org.apache.httpcomponents:httpclient:jar:4.3.3:compile",Wed Jul 18 22:26:56 EEST 2007,Tue Jan 27 22:57:22 EET 2015
+"org.apache.httpcomponents:httpcore:jar:4.3.2:compile",Thu Dec 07 01:06:36 EET 2006,Sun Dec 14 14:30:52 EET 2014
+"org.apache.httpcomponents:httpmime:jar:4.3.3:compile",Mon Feb 25 10:53:26 EET 2008,Tue Jan 27 22:57:58 EET 2015
+"commons-codec:commons-codec:jar:1.9:compile",Wed Nov 09 00:29:51 EET 2005,Thu Nov 06 16:15:35 EET 2014
+"net.sourceforge.htmlunit:htmlunit-core-js:jar:2.15:compile",Thu Jul 24 17:18:55 EEST 2008,Fri May 30 16:57:57 EEST 2014
+"xerces:xercesImpl:jar:2.11.0:compile",Tue Nov 08 23:51:32 EET 2005,Wed Feb 20 22:20:06 EET 2013
+"xml-apis:xml-apis:jar:1.4.01:compile",Sat Nov 19 07:17:14 EET 2005,Sat Aug 20 03:11:11 EEST 2011
+"net.sourceforge.nekohtml:nekohtml:jar:1.9.21:compile",Sat Apr 05 22:59:46 EEST 2008,Mon Jun 02 13:24:53 EEST 2014
+"net.sourceforge.cssparser:cssparser:jar:0.9.14:compile",Sun Nov 18 08:12:43 EET 2007,Thu May 08 21:47:56 EEST 2014
+"org.w3c.css:sac:jar:1.3:compile",Sun Mar 23 06:42:50 EET 2008,Sun Mar 23 06:42:50 EET 2008
+"commons-io:commons-io:jar:2.4:compile",Wed Nov 09 00:29:08 EET 2005,Wed Jun 13 01:22:06 EEST 2012
+"commons-logging:commons-logging:jar:1.1.3:compile",Wed Nov 09 00:16:41 EET 2005,Sat Jul 05 21:12:28 EEST 2014
+"org.eclipse.jetty:jetty-websocket:jar:8.1.15.v20140411:compile",Wed Nov 25 04:36:08 EET 2009,Wed Sep 03 21:00:18 EEST 2014
+"org.eclipse.jetty:jetty-util:jar:8.1.15.v20140411:compile",Fri Apr 03 18:46:51 EEST 2009,Tue Feb 24 18:43:26 EET 2015
+"org.eclipse.jetty:jetty-io:jar:8.1.15.v20140411:compile",Fri Apr 03 18:47:09 EEST 2009,Tue Feb 24 18:44:57 EET 2015
+"org.eclipse.jetty:jetty-http:jar:8.1.15.v20140411:compile",Fri Apr 03 18:47:21 EEST 2009,Tue Feb 24 18:43:51 EET 2015
+"org.projectlombok:lombok:jar:1.14.8:compile",Tue Mar 08 21:27:33 EET 2011,Wed Feb 11 00:03:19 EET 2015
+"org.jsoup:jsoup:jar:1.8.1:compile",Fri Feb 05 15:51:55 EET 2010,Sun Sep 28 07:07:42 EEST 2014
+
+
+
+expected EOF in years
+min,mean,max,std_dev,number_of_deps
+3.6105340417300864,7.06647756394808,9.304340263191273,1.807802660763424,24 
