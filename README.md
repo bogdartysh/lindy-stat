@@ -6,30 +6,24 @@ The project is based on http://www.johndcook.com/blog/2012/12/17/the-lindy-effec
 HOW-TO
 ======
 
-1. Clone project to some folder:
+### Clone project to some folder:
 
 $cd ~
 $git clone https://github.com/bogdartysh/lindy-stat.git
 
-2. build project
+### build project
 
 $mvn assembly:assembly
 
-3. generate dependency tree file:
+### generate dependency tree file:
 
 $cd ~/you_project
 $mvn dependency:tree > dep.tree
-
-4. copy dep.tree to folder_with_project/taget
-
 $cp dep.tree ~/lindy-stat
 
-5. cd lindy-stat target folder
+### run jar file to generate data:
 
-$cd ~/lindy-stat
-
-6. run jar file to generate data:
-
+$cd ~/lindy-stat/target
 $java -jar lindy-stat-1.0-SNAPSHOT-jar-with-dependencies.jar tree dep.tree dep.tree.csv
 
-it will print some logs and finally generate the csv file
+it will print some logs and finally generate the csv file. Enjoy
