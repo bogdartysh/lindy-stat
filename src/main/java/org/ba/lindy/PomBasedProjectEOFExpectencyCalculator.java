@@ -34,7 +34,6 @@ public class PomBasedProjectEOFExpectencyCalculator {
 				if (dates != null) {
 					writer.write(getOutPut(line, dates));
 					minDates.addValue(currentDate - dates[0]);
-					log.info(">>> " + toYears((double)(currentDate - dates[0])) + " " + currentDate + " " + dates[0] + "  " + new Date(dates[0]));
 				}
 			}
 			writer.write("\n");
