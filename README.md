@@ -4,6 +4,7 @@ liny effect maven repo calculator
 The project is based on http://www.johndcook.com/blog/2012/12/17/the-lindy-effect/, https://en.wikipedia.org/wiki/Lindy_Effect
 
 HOW-TO
+======
 
 1. Clone project to some folder:
 
