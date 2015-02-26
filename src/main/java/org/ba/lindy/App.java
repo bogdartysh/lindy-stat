@@ -12,7 +12,7 @@ public class App {
 			System.out.println(arg);
 		}
 
-		if (!"pom".equals(args[0].trim())) {
+		if (!"tree".equals(args[0].trim())) {
 			System.err.print("first arg should be a valid project type " + args[0]);
 			System.exit(-1);
 		}
