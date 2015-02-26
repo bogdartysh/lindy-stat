@@ -3,6 +3,14 @@ liny effect maven repo calculator
 
 The project is based on [J. D. Cook blog](http://www.johndcook.com/blog/2012/12/17/the-lindy-effect/), [wikipage](https://en.wikipedia.org/wiki/Lindy_Effect).
 
+License
+======
+The software is licensed unde GPLv3 terms with one exception:
+using of the project in any form and by all means is forbiden to:
+1. all governemnts and its agencies which support terrorism
+2. all governemnts and its agencies which annexed territory of another state after 2000 year without UN or NATO permission
+3. to all agencies of Russian Federation.
+
 HOW-TO
 ======
 
