@@ -22,7 +22,9 @@ public class DependencyEOFExpectencyCalculator {
 
 		try {
 			val urlStr = getRestUrl(dependencyRecord);
-			if (urlStr == null) return null;
+			if (urlStr == null) {
+				return null;
+			}
 			String resp = Resources.asCharSource(new URL(urlStr), Charsets.UTF_8).read();
 			val pageJson = (JsonObject) gson.parse(resp);
 			val elements = (((JsonObject) pageJson.get("response")).getAsJsonArray("docs")).iterator();
@@ -37,8 +39,8 @@ public class DependencyEOFExpectencyCalculator {
 			log.severe(e.getMessage());
 			return null;
 		}
-		log.info(dependencyRecord +"   " + min + "  " + max);
-		return new Long[] { min, max };
+		log.info(dependencyRecord + "   " + min + "  " + max);
+		return new Long[] { min, max, getLevel(dependencyRecord) };
 	}
 
 	public static String getRestUrl(final String input) {
@@ -58,7 +60,11 @@ public class DependencyEOFExpectencyCalculator {
 		val groupId = groupAndArtifact.substring(0, groupAndArtifact.lastIndexOf(":")).replace(":", ".");
 		val artifactId = groupAndArtifact.substring(groupAndArtifact.lastIndexOf(":") + ":".length());
 		return "http://search.maven.org/solrsearch/select?q=g:%22" + groupId + "%22+AND+a:%22" + artifactId + "%22&core=gav&rows="
-		+ maxNumberOfVersions + "&wt=json";
+				+ maxNumberOfVersions + "&wt=json";
+	}
+
+	public static long getLevel(final String input) {
+		return (input.indexOf("-") - "[INFO] ".length()) / 3;
 	}
 
 	public static String getExtractedFromPom(final String input) {

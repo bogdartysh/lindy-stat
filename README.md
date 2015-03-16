@@ -10,7 +10,7 @@ using of the project in any form and by all means is forbiden to:
 
 1. all governemnts and its agencies which support terrorism
 2. all governemnts and its agencies which annexed territory of another state after 2000 year without UN or NATO permission
-3. to all agencies of Russian Federation.
+3. all agencies of Russian Federation.
 
 HOW-TO
 ======
