@@ -1,7 +1,8 @@
 # lindy-stat
 liny effect maven repo calculator
 
-The project is based on [J. D. Cook blog](http://www.johndcook.com/blog/2012/12/17/the-lindy-effect/), [wikipage](https://en.wikipedia.org/wiki/Lindy_Effect).
+The project is based on [J. D. Cook blog](http://www.johndcook.com/blog/2012/12/17/the-lindy-effect/), [wikipage](https://en.wikipedia.org/wiki/Lindy_Effect), [Original blog] (http://bogdanartyushenko.blogspot.com/2015/03/lindy-effect-maven-analyzer-tool.html).
+ 
 
 License
 ======
