@@ -1,0 +1,135 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="status"/>
+        <xs:element name="result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="project">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="id"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="url"/>
+                    <xs:element type="xs:string" name="html_url"/>
+                    <xs:element type="xs:dateTime" name="created_at"/>
+                    <xs:element type="xs:dateTime" name="updated_at"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:anyURI" name="homepage_url"/>
+                    <xs:element type="xs:anyURI" name="download_url"/>
+                    <xs:element type="xs:string" name="url_name"/>
+                    <xs:element type="xs:string" name="medium_logo_url"/>
+                    <xs:element type="xs:string" name="small_logo_url"/>
+                    <xs:element type="xs:short" name="user_count"/>
+                    <xs:element type="xs:float" name="average_rating"/>
+                    <xs:element type="xs:short" name="rating_count"/>
+                    <xs:element type="xs:byte" name="review_count"/>
+                    <xs:element type="xs:int" name="analysis_id"/>
+                    <xs:element name="tags">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="tag" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="analysis">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:int" name="id"/>
+                          <xs:element type="xs:string" name="url"/>
+                          <xs:element type="xs:short" name="project_id"/>
+                          <xs:element type="xs:dateTime" name="updated_at"/>
+                          <xs:element type="xs:dateTime" name="logged_at"/>
+                          <xs:element type="xs:dateTime" name="min_month"/>
+                          <xs:element type="xs:dateTime" name="max_month"/>
+                          <xs:element type="xs:byte" name="twelve_month_contributor_count"/>
+                          <xs:element type="xs:byte" name="total_contributor_count"/>
+                          <xs:element type="xs:short" name="twelve_month_commit_count"/>
+                          <xs:element type="xs:short" name="total_commit_count"/>
+                          <xs:element type="xs:int" name="total_code_lines"/>
+                          <xs:element name="factoids">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="factoid" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="languages">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="language" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:byte" name="percentage" use="optional"/>
+                                        <xs:attribute type="xs:string" name="color" use="optional"/>
+                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="graph_url"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="main_language_id"/>
+                          <xs:element type="xs:string" name="main_language_name"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="licenses">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="license">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="name"/>
+                                <xs:element type="xs:string" name="nice_name"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="project_activity_index">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="value"/>
+                          <xs:element type="xs:string" name="description"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="links">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="link" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="title"/>
+                                <xs:element type="xs:anyURI" name="url"/>
+                                <xs:element type="xs:string" name="category"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

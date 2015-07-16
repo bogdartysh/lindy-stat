@@ -1,0 +1,68 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="status"/>
+        <xs:element type="xs:byte" name="items_returned"/>
+        <xs:element type="xs:int" name="items_available"/>
+        <xs:element type="xs:byte" name="first_item_position"/>
+        <xs:element name="result">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="project" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:int" name="id"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="url"/>
+                    <xs:element type="xs:string" name="html_url"/>
+                    <xs:element type="xs:dateTime" name="created_at"/>
+                    <xs:element type="xs:dateTime" name="updated_at"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="homepage_url"/>
+                    <xs:element type="xs:string" name="download_url"/>
+                    <xs:element type="xs:string" name="url_name"/>
+                    <xs:element type="xs:byte" name="user_count"/>
+                    <xs:element type="xs:string" name="average_rating"/>
+                    <xs:element type="xs:byte" name="rating_count"/>
+                    <xs:element type="xs:byte" name="review_count"/>
+                    <xs:element type="xs:int" name="analysis_id"/>
+                    <xs:element name="tags" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="tag" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="licenses">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="license" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="name"/>
+                                <xs:element type="xs:string" name="nice_name"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="project_activity_index">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="value"/>
+                          <xs:element type="xs:string" name="description"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

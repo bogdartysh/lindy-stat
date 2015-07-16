@@ -1,0 +1,80 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building lindy-stat.solr 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ lindy-stat.solr ---
+[INFO] org.ba.lindy.solr:lindy-stat.solr:jar:1.0-SNAPSHOT
+[INFO] +- junit:junit:jar:4.10:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] \- org.apache.solr:solr-core:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-analyzers-common:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-analyzers-kuromoji:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-analyzers-phonetic:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-backward-codecs:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-codecs:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-core:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-expressions:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-grouping:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-highlighter:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-join:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-memory:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-misc:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-queries:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-queryparser:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-spatial:jar:5.0.0:compile
+[INFO]    +- org.apache.lucene:lucene-suggest:jar:5.0.0:compile
+[INFO]    +- org.apache.solr:solr-solrj:jar:5.0.0:compile
+[INFO]    +- com.carrotsearch:hppc:jar:0.5.2:compile
+[INFO]    +- com.google.guava:guava:jar:14.0.1:compile
+[INFO]    +- com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[INFO]    +- com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:jar:1.2:compile
+[INFO]    +- com.spatial4j:spatial4j:jar:0.4.1:compile
+[INFO]    +- commons-cli:commons-cli:jar:1.2:compile
+[INFO]    +- commons-codec:commons-codec:jar:1.10:compile
+[INFO]    +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO]    +- commons-configuration:commons-configuration:jar:1.6:compile
+[INFO]    +- commons-fileupload:commons-fileupload:jar:1.2.1:compile
+[INFO]    +- commons-io:commons-io:jar:2.4:compile
+[INFO]    +- commons-lang:commons-lang:jar:2.6:compile
+[INFO]    +- dom4j:dom4j:jar:1.6.1:compile
+[INFO]    +- joda-time:joda-time:jar:2.2:compile
+[INFO]    +- log4j:log4j:jar:1.2.17:compile
+[INFO]    +- org.antlr:antlr-runtime:jar:3.5:compile
+[INFO]    +- org.apache.hadoop:hadoop-annotations:jar:2.3.0:compile
+[INFO]    |  \- jdk.tools:jdk.tools:jar:1.7:system
+[INFO]    +- org.apache.hadoop:hadoop-auth:jar:2.3.0:compile
+[INFO]    +- org.apache.hadoop:hadoop-common:jar:2.3.0:compile
+[INFO]    +- org.apache.hadoop:hadoop-hdfs:jar:2.3.0:compile
+[INFO]    +- org.apache.httpcomponents:httpclient:jar:4.3.1:compile
+[INFO]    +- org.apache.httpcomponents:httpcore:jar:4.3:compile
+[INFO]    +- org.apache.httpcomponents:httpmime:jar:4.3.1:compile
+[INFO]    +- org.apache.zookeeper:zookeeper:jar:3.4.6:compile
+[INFO]    +- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO]    +- org.codehaus.woodstox:woodstox-core-asl:jar:4.4.1:compile
+[INFO]    +- org.eclipse.jetty:jetty-continuation:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-deploy:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-http:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-io:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-jmx:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-security:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-server:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-servlet:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-util:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-webapp:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty:jetty-xml:jar:8.1.10.v20130312:compile
+[INFO]    +- org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016:compile
+[INFO]    +- org.noggit:noggit:jar:0.6:compile
+[INFO]    +- org.ow2.asm:asm:jar:4.1:compile
+[INFO]    +- org.ow2.asm:asm-commons:jar:4.1:compile
+[INFO]    +- org.restlet.jee:org.restlet:jar:2.1.1:compile
+[INFO]    +- org.restlet.jee:org.restlet.ext.servlet:jar:2.1.1:compile
+[INFO]    \- org.slf4j:slf4j-api:jar:1.7.7:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.211s
+[INFO] Finished at: Mon Mar 16 16:37:59 EET 2015
+[INFO] Final Memory: 16M/407M
+[INFO] ------------------------------------------------------------------------
