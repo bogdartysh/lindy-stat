@@ -31,7 +31,7 @@ def get_stats_from_files():
 #for key, val in stats
 #    print str(key) + ',' + ', '.join(str(x) for x in val.values())
 
-def get_stat(stats, age) :
+def get_acc_stat(stats, age) :
     qty = 0;    surv = 0.0    
     for when in (stat for stat in stats if stat +  step in stats):
         for cf in (s for s in stats[when] if when > (s + 1) *  step + age):
@@ -41,10 +41,20 @@ def get_stat(stats, age) :
             qty += add_qty
     return round(surv*100,2)
 
+def get_current_stat(stats, age) :
+    qty = 0;    surv = 0.0    
+    for when in (stat for stat in stats if stat +  step in stats):
+        for cf in (s for s in stats[when] if when == (s + 1) *  step + age):
+            add_surv = 1.0*stats[when +  step ][cf] / stats[when][cf]
+            add_qty = stats[when][cf]
+            surv = (add_surv * add_qty + surv * qty) / (add_qty + qty)
+            qty += add_qty
+    return round(surv*100,2)
+
 def get_surv() :
     stats = get_stats_from_files()
     ages = range(step, upper_bound - 3 * step, step)
-    return {'ages':ages, 'survivabilities':[get_stat(stats, age) for age in ages]}
+    return {'ages':ages, 'accumulated_survivabilities':[get_acc_stat(stats, age) for age in ages], 'current_survivability': [get_current_stat(stats, age) for age in ages]}
     
 
 
